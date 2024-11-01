@@ -1,0 +1,29 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+HISTTIMEFORMAT='%Y-%m-%d%T '
+PS1='[\u@\h \W]\$ '
+
+alias ls='ls --color=auto'
+alias lt='ls -lsrht'
+alias cls='clear'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias grep='grep --color=auto'
+
+# Custom alias 
+alias cb='carbonara.sh'
+alias pw='/bin/pipewireStartServices.sh'
+alias pws='/bin/PipewireStateAllServices.sh'
+
+# Habilitar auto-complete de comandos
+if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+fi
+
+source /home/apollo/.config/broot/launcher/bash/br

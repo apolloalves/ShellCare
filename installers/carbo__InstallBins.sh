@@ -24,18 +24,18 @@ fi
 ####################################################################################
 
 # Defines the root directory from which find will be run
-ROOT_DIR="/home/Carbonara"
+ROOT_DIR="/home/carbonara"
 echo -e "\n\033[01;37m\033[01mwait...\033[00;37m\033[00m\n"
 
 # Use the find command to locate the "Carbonara" folder
-path=$(find "$ROOT_DIR" -type d -name "Carbonara" 2>/dev/null)
+path=$(find "$ROOT_DIR" -type d -name "carbonara" 2>/dev/null)
 
 # Checks if the folder was found
 
 if [ -n "$path" ]; then
 
     sleep 2
-    echo -e "\n\033[01;32mThe cloned 'Carbonara' folder was found in: $path\033[00;37m\n"
+    echo -e "\n\033[01;32mThe cloned 'carbonara' folder was found in: $path\033[00;37m\n"
 
     ls -lsht $path/*/*.sh
     find $path -ls | wc -l
