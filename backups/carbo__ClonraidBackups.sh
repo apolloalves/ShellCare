@@ -20,11 +20,11 @@ fi
 # the operation was successful.                                                                                    #
 #                                                                                                                  #
 ####################################################################################################################
-MENU='/bin/carbonara.sh'
 
+MENU='/bin/carbo__MenuItem.sh'
 
 echo -e "\nOpening Nautilus..."
-
 sleep 1
+
 nautilus /mnt/MDSATA >/dev/null 2>&1
 $MENU

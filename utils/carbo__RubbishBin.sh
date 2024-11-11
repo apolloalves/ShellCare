@@ -23,7 +23,7 @@ fi
 #                                                                     #
 #######################################################################
 
-MENU='/bin/carbonara.sh'
+MENU='/bin/carbo__Carbonara.sh'
 
 pkill nautilus
 echo "nautilus is closed!"

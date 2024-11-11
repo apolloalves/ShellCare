@@ -23,7 +23,8 @@ fi
 ##################################################################################################################
 
 clear
-MENU='/bin/carbonara.sh'
+
+MENU='/bin/carbo__Carbonara.sh'
 JORNALMENU='show__journalctl.sh'
 LINE_SCRIPT='line_script.sh'
 
