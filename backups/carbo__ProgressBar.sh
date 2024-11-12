@@ -1,7 +1,6 @@
 #!/bin/bash
 
 clear
-
 # Exibe mensagem em amarelo negrito
 echo -e "\n\033[1;33mEXECUTING BACKUP OF ROOT FOLDER\033[0m"
 
@@ -29,6 +28,6 @@ echo -e "\n\033[1;33mEXECUTING BACKUP OF ROOT FOLDER\033[0m"
 LOOP_PID=$!
 
 # Exec anyway
-
+fstrim -av
 # Quando o backup terminar, o laço é finalizado
 kill $LOOP_PID
