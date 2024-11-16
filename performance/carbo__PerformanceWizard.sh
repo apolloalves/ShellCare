@@ -10,20 +10,20 @@ fi
 # Script: performance_wizard.sh                                     #
 # Author: Apollo Alves                                              #
 # Date: 17/12/2024                                                  #
-#                                                                   #
+#                                                                   #cd
 #####################################################################
 
 
 
 clear
 MENU='/bin/carbonara.sh'
-PERFORMANCE='performance_wizard.sh'
+PERFORMANCE='/bin/carbo__PerformanceWizard.sh'
 
 
 
 echo
 ######################################################################################################################################################################################
-LINE_SCRIPT='line_script.sh'
+LINE_SCRIPT='/bin/carbo__LineScript.sh'
 echo -e "\033[1;97;100m        Carbonara          \033[0m\033[1;30;107m         Apollo Alves         \033[1;97;100m        PERFORMANCE WIZARD        \033[0m"
 ######################################################################################################################################################################################
 echo
@@ -57,13 +57,13 @@ if [ "$option_choice" != "e" ] && [ "$option_choice" != "E" ]; then
         case "$option_choice" in
 
         1)
-           swapState.sh
+           carbo__SwapState.sh
 	   ;;
         2)
-           cleanup__swap.sh
+           carbo__CleanupSwap.sh
            ;;
         3)
-           optimize__performance.sh
+           carbo__OptimizePerformance.sh
            ;;
 
         *)

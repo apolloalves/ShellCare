@@ -30,8 +30,8 @@ fi
 # state of memory. This can be useful for monitoring memory usage and identifying whether swap memory is being used by the system. #
 #                                                                                                                                  #
 ####################################################################################################################################
-LINE_SCRIPT='/bin/line_script.sh'
-PERFORMANCE='/bin/performance_wizard.sh'
+LINE_SCRIPT='/bin/carbo__LineScript.sh'
+PERFORMANCE='/bin/carbo__PerformanceWizard.sh'
 
 
 echo -e "\nSwap Sate\n"

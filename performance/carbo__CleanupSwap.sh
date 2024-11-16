@@ -23,7 +23,7 @@ fi
 #                                                                                                                #
 ##################################################################################################################
 
-MENU="performance_wizard.sh"
+MENU="carbo__PerformanceWizard.sh"
 
 SWAPPINESS=$(cat /proc/sys/vm/swappiness)
 LINE_SCRIPT='line_script.sh'

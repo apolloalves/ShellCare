@@ -26,7 +26,7 @@ fi
 ############################################################################
 
 SWAPPINESS=$(cat /proc/sys/vm/swappiness)
-LINE_SCRIPT='/bin/line_script.sh'
+LINE_SCRIPT='carbo__LineScript.sh'
 
 # Function to print status
 print_status() {
@@ -45,17 +45,12 @@ echo -e "\n\033[01;32mRemoving caches...\033[00;37m\n"   #
 sudo pacman -Scc --noconfirm
 print_status
 
-
-
-
-
-
 #RAM MEMORY
 ############################################################################
 echo -e "\n\033[01;32mCleaning RAM memory...\033[00;37m\n"                 #
 ############################################################################
 
-cleanup__swap.sh
+carbo__CleanupSwap.sh
 
 ############################################################################
 echo -e "\n\033[01;05;37mSystem successfully optimized!!\033[00;37m\n"     #
