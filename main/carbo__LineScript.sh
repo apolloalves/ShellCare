@@ -28,4 +28,4 @@ for ((i=0; i<96; i++)); do
     LINE_SCRIPT+="─"
 done
 
-printf "%s\n" "$LINE_SCRIPT"cd
+printf "%s\n" "$LINE_SCRIPT"
