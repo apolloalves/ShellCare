@@ -90,8 +90,8 @@ clear
 # BACKGROUND IN TEXT
 # echo -e "\033[48;8;01;30;100mChoose an option from the menu\033[0m"
 #
-# BACKGROUND WHITE IN TEXT WHITE
-# echo -e "\033[1;48;05;32;100m   Choose an option from the menu  \033[0m"
+# YELLOW MESSAGE
+# echo -e "\n\033[1;33mthere is nothing to do!\033[0m"
 
 ######################################################################################################################################################################################
 
