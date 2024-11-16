@@ -24,15 +24,15 @@ clear
 
 ######################################################################################################################################################################################
 MENU='/bin/carbonara.sh'
-EGGSCREATE='/bin/eggs__create.sh'
-EGGSCHECK='/bin/eggs__check.sh'
+EGGSCREATE='/bin/carbo__EggsCreate.sh'
+EGGSCHECK='/bin/carbo__EggsCheck.sh'
 EGGSBROOT='/bin/showbroot__eggs.sh'
-EGGSINSTALL='/bin/eggs__install.sh'
+EGGSINSTALL='/bin/carbo__EggsInstall.sh'
 MANAGER='/bin/filesManager.sh'
-EGGSMENU='/bin/eggs__wizard.sh'
+EGGSMENU='/bin/carbo__EggsWizard.sh'
 
 ######################################################################################################################################################################################
-LINE_SCRIPT='line_script.sh'
+LINE_SCRIPT='carbo__LineScript.sh'
 echo -e "\033[1;97;100m               carbonara            \033[0m\033[1;30;107m        Apollo Alves        \033[1;97;100m        Penguin's Eggs Wizard       \033[0m"
 ######################################################################################################################################################################################
 echo

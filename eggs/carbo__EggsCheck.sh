@@ -34,13 +34,10 @@ EGGS_DIRECTORY="/home/eggs"
 FILEPATH="/home/eggs/.mnt/"
 VENTOY="/mnt/VENTOY"
 MDSATA="/mnt/MDSATA/"
-LINE_SCRIPT='/bin/line_script.sh'
+LINE_SCRIPT='/bin/carbo__LineScript.sh'
 
 
 # Check and mount devices
-echo -e "\nChecking devices..."
-sleep 1
-
 if ! mountpoint -q $VENTOY; then
     mount /dev/sdd1 $VENTOY || { echo "Failed to mount $VENTOY"; exit 1; }
 fi
@@ -71,10 +68,9 @@ while true; do
           echo -e "\n\033[01;37m[\033[00;32m OK\033[00;37m ]\033m\n"
 
           echo -e "\ncreating a backup for : '$MDSATA'"
-          sudo kgx --tab -e "watch df -h $MDSATA"
           rsync -avh --progress $VENTOY/ARCHLINUX_$DATE.iso $MDSATA
 
-
+          sudo kgx --tab -e "watch df -h $MDSATA"
           echo -e "\n\033[01;05;37mupload the file : 'ARCHLINUX__$DATE.iso' to Google Drive now!!\033[00;37m\n"
           $LINE_SCRIPT
           break

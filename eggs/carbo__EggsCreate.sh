@@ -34,7 +34,7 @@ EGGS_DIRECTORY="/home/eggs"
 FILEPATH="/home/eggs/.mnt/"
 MDSATA="/mnt/MDSATA/ARCHEGGS"
 VENTOY="/mnt/VENTOY"
-LINE_SCRIPT='/bin/line_script.sh'
+LINE_SCRIPT='/bin/carbo__LineScript.sh'
 
 # Check and mount devices
 echo -e "\nChecking devices..."

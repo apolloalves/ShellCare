@@ -113,7 +113,7 @@ if [ "$option_choice" != "e" ] && [ "$option_choice" != "E" ]; then
 
         case "$option_choice" in
         1)
-            eggs__wizard.sh
+            carbo__EggsWizard.sh
             ;;
 
         2)
@@ -121,22 +121,22 @@ if [ "$option_choice" != "e" ] && [ "$option_choice" != "E" ]; then
             ;;
 
         3)
-            clonraid__backups.sh
+            carbo__ClonraidBackups.sh
             ;;
 	4)
-            check__space.sh
+            carbo__CheckSpace.sh
             ;;
         5)
-            performance_wizard.sh
+            carbo__PerformanceWizard.sh
             ;;
 	6)
             system__analyse.sh
             ;;
 	7)
-	    show__journalctl.sh
+	    carbo__ShowJournalctl.sh
             ;;
         8)
-           disabled__ListServices.sh
+           carbo__DisabledListServices.sh
            ;;
         9)
            report.sh
