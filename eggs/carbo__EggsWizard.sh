@@ -26,9 +26,9 @@ clear
 MENU='/bin/carbonara.sh'
 EGGSCREATE='/bin/carbo__EggsCreate.sh'
 EGGSCHECK='/bin/carbo__EggsCheck.sh'
-EGGSBROOT='/bin/showbroot__eggs.sh'
+EGGSBROOT='/bin/carbo__ShowBrootEggs.sh'
 EGGSINSTALL='/bin/carbo__EggsInstall.sh'
-MANAGER='/bin/filesManager.sh'
+MANAGER='/bin/carbo__BackupManager.sh'
 EGGSMENU='/bin/carbo__EggsWizard.sh'
 
 ######################################################################################################################################################################################
@@ -80,7 +80,7 @@ if [ "$option_choice" != "e" ] && [ "$option_choice" != "E" ]; then
             $EGGSBROOT
             ;;
         4)
-            $MANAGER >/dev/null 2>&1
+            $MANAGER
             ;;
         5)
             $EGGSINSTALL
