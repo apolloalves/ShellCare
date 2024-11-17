@@ -117,7 +117,7 @@ if [ "$option_choice" != "e" ] && [ "$option_choice" != "E" ]; then
             ;;
 
         2)
-            carbo__ClonraidBackups.sh
+           carbo__BackupPersonal.sh
             ;;
 
         3)

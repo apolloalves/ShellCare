@@ -20,7 +20,7 @@ fi
 #                                                                                                                  #
 ####################################################################################################################
 
-MENU='/bin/carbo__Carbonara.sh'
+MENU='/bin/carbonara.sh'
 clear
 
 # Exibe mensagem em amarelo negrito

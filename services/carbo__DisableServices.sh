@@ -56,7 +56,7 @@ sleep 1
 systemctl status accounts-daemon.service
 echo 
 print_status
-line_script.sh
+
 #systemctl status accounts-daemon.service
 ##########################################################################################################
 #                                                                                                         #

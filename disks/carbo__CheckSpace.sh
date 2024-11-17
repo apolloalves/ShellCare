@@ -40,7 +40,7 @@ print_status() {
     fi
 }
 
-LINE_SCRIPT='line_script.sh'
+LINE_SCRIPT='carbo__LineScript.sh'
 echo -e "\n\033[01;33mChecking spaces...\033[0m\n"
 sleep 2
 df -h /dev/md127p1 && echo "" && df -h /dev/md127p2 && echo "" && df -h /dev/sdd1 && echo "" && df -h /dev/sdd3

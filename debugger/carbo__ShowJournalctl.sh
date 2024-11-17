@@ -24,9 +24,9 @@ fi
 
 clear
 
-MENU='/bin/carbo__Carbonara.sh'
-JORNALMENU='show__journalctl.sh'
-LINE_SCRIPT='line_script.sh'
+MENU='/bin/carbonara.sh'
+JORNALMENU='carbo__ShowJournalctl.sh'
+LINE_SCRIPT='carbo__LineScript.sh'
 
 # Capture Ctrl+C and return to the menu
 trap ctrl_c INT
