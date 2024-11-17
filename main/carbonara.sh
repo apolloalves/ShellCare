@@ -139,15 +139,15 @@ if [ "$option_choice" != "e" ] && [ "$option_choice" != "E" ]; then
            carbo__DisabledListServices.sh
            ;;
         9)
-           report.sh
+           carbo__report.sh
            ;;
 
         10)
-           reboot__system.sh
+           carbo__RebootSystem.sh
            ;;
 
         11)
-           rubbish__bin.sh
+           carbo__RubbishBin.sh
            ;;
 
         *)

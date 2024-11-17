@@ -33,7 +33,10 @@ fi
 clear
 LINE_SCRIPT='carbo__LineScript.sh'
 MENU='/bin/carbonara.sh'
-PLOT="/home/apollo/plot/Disable-ServicesList.log"
+DIR='/home/plot'
+
+mkdir $DIR
+PLOT="$DIR/Disable-ServicesList.log"
 
 echo -e "\nGenerating list..\n"
 
