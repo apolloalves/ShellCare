@@ -87,16 +87,6 @@ if [ -n "$path" ]; then
     sleep 2
     sudo pacman -S preload
     echo -e "\n\033[01;37m\033[01;32mdone\033[00;37m\033m"
-
-    echo -e "\n\033[01;32minstalling prelink...\033[00;37m\n"
-    sleep 2
-    #sudo  install prelink -y
-    #sudo sed -i '6s/PRELINKING=.*/PRELINKING=yes/' /etc/default/prelink >/dev/null
-    #sudo chmod 666 /etc/prelink.conf
-    #sudo prelink -amvR
-    #echo -e "\n\033[01;37m\033[01;32mdone\033[00;37m\033m"
-
-    echo -e "\n\033[01;32minstalling trash-cli...\033[00;37m\n"
     sleep 2
     sudo pacman -S trash-cli
     echo -e "\n\033[01;37m\033[01;32mdone\033[00;37m\033m"
