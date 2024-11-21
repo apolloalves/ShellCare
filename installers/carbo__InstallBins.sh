@@ -1,16 +1,9 @@
 #!/bin/bash
-# Check if the user is root
-if (( EUID != 0 )); then
-    echo "This script needs to be run as root."
-    echo "Please execute this with sudo."
-    exit 1
-fi
 ####################################################################################
-#                                                                                  #
-# Script: install.sh - Carbonara Setup Script                                      #
-#                                                                                  #
+# Carbonara                                                                        #
+# Script: carbo__InstallBins.sh - Carbonara Setup Script                           #
 # Author: Apollo Alves                                                             #
-# Date: 16/12/2023                                                                 #
+# Date: 21/11/2024                                                                 #
 #                                                                                  #
 # Description:                                                                     #
 # This script automates the setup process for Carbonara. It performs               #
@@ -19,9 +12,11 @@ fi
 # installing dependencies, and configuring system utilities.                       #
 #                                                                                  #
 # Note: This script assumes a Debian-based system and requires superuser           #
-# (sudo) privileges for certain operations.                                        #
-#                                                                                  #
+# sudo privileges for certain operations.                                          #
 ####################################################################################
+
+# Check if the user is root
+source 'carbo__verifyRoot.sh'
 
 # Defines the root directory from which find will be run
 ROOT_DIR="/home/carbonara"

@@ -10,16 +10,26 @@ PS1='[\u@\h \W]\$ '
 
 alias ls='ls --color=auto'
 alias lt='ls -lsrht'
+
 alias cls='clear'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias lt='ls -lsht'
 alias grep='grep --color=auto'
 
 # Custom alias 
-alias cb='carbonara.sh'
-alias pw='/bin/pipewireStartServices.sh'
-alias pws='/bin/PipewireStateAllServices.sh'
+alias cb='sudo carbonara.sh'
+alias pw='/bin/PipewireRestartAllServices.sh'
+alias pws='/bin/PipewireCheckServices.sh'
+alias lsblkd='lsblk --output=NAME,MODEL,PATH,FSAVAIL,FSROOTS,FSSIZE,FSTYPE,FSUSED,FSUSE%,FSVER,MOUNTPOINTS | grep -v loop '
+alias cl='xsel -clipboard --clear; printf "\nclipboard was cleaner!\n"'
+alias rb='clear; trash-empty --all; printf "Rubbish is clear!\n"'
+
+
+
+
+
 
 # Habilitar auto-complete de comandos
 if [ -f /usr/share/bash-completion/bash_completion ]; then
@@ -27,3 +37,4 @@ if [ -f /usr/share/bash-completion/bash_completion ]; then
 fi
 
 source /home/apollo/.config/broot/launcher/bash/br
+export EDITOR=vim

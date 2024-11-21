@@ -3,7 +3,7 @@
 # Carbonara                                                                       #
 # Script: carbo__BrootInstall.sh                                                  #
 # Author: Apollo Alves                                                            #
-# Date: 16/12/2023                                                                #
+# Date: 16/12/2024                                                                #
 #                                                                                 #
 # Description:                                                                    #
 # This script installs and opens Broot file manager.                              #
@@ -11,11 +11,7 @@
 ###################################################################################
 
 # Check if the user is root
-if (( EUID != 0 )); then
-    echo "This script needs to be run as root."
-    echo "Please execute this with sudo."
-    exit 1
-fi
+source 'carbo__verifyRoot.sh'
 
 # Function to print status
 print_status() {
@@ -40,6 +36,6 @@ sleep 5
 mv -v broot /usr/local/bin
 chmod +x /usr/local/bin/broot
 sudo su broot
-echo 
+echo
 print_status
 

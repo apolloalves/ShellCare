@@ -1,10 +1,5 @@
 #!/bin/bash
-# Check if the user is root
-if (( EUID != 0 )); then
-    echo "This script needs to be run as root."
-    echo "Please execute this with sudo."
-    exit 1
-fi
+
 ####################################################################################
 #                                                                                  #
 # Script: install.sh - LinuxBashCare Setup Script                                  #
@@ -22,7 +17,11 @@ fi
 # (sudo) privileges for certain operations.                                        #
 #                                                                                  #
 ####################################################################################
+
+# Check if the user is root
+source 'carbo__verifyRoot.sh'
 clear
+
 # Defines the root directory from which find will be run
 ROOT_DIR="/"
 BIN='/usr/bin/carbo__*'
