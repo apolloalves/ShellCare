@@ -1,25 +1,28 @@
 #!/bin/bash
+############################################################################
+# Carbonara                                                                #
+# Script: carbonara.sh                                                     #
+# Author: Apollo Alves                                                     #
+# Date: 21/11/2024                                                         #
+# Description: Multifunctional tool designed to simplify and automate      #
+# administration tasks on Linux.                                           #
+							                   #
+############################################################################
 
-
+source ~/.bashrc
 
 # Check if the user is root
 source 'carbo__verifyRoot.sh'
-
-source ~/.bashrc
-. ~/.bashrc
 clear
 
-
-
-
-MENU='/bin/carbonara.sh'
+#Imports
 source '/bin/carbo__MenuItem.sh'
 source '/bin/carbo__LineScript.sh'
+
+MENU='/bin/carbonara.sh'
 read -p $'\033[01;33m Input option : \033[0m' option_choice
 
 $LINE
-
-
 valid_option=true
 
 if [ "$option_choice" != "e" ] && [ "$option_choice" != "E" ]; then
@@ -27,8 +30,8 @@ if [ "$option_choice" != "e" ] && [ "$option_choice" != "E" ]; then
     if [ "$valid_option" = true ]; then
         echo -e "\n\033[01;33mThe option: $option_choice will be executed:\033[0m\n"
 
-
         case "$option_choice" in
+
         1)
             carbo__EggsWizard.sh
             ;;
