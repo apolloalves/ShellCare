@@ -1,16 +1,10 @@
 #!/bin/bash
-# Check if the user is root
-source 'carbo__verifyRoot.sh'
-
-#####################################################################
-#                                                                   #
-# Script: cleanup__swap.sh                                          #
-# Author: Apollo Alves                                              #
-# Date: 16/12/2023                                                  #
-#                                                                   #
-#####################################################################
 ##################################################################################################################
-#                                                                                                                #
+# Carbonara                                                          						 #
+# Script: carbo__CleanupSwap.sh                                     						 #
+# Author: Apollo Alves                                              						 #
+# Date: 21/11/2024                                                  						 #
+#														 #
 # Description:                                                                                                   #
 # This script checks if the user has root privileges. If not, it exits with an error message.                    #
 # It then prompts the user to decide whether to remove the contents of the swap space. If the user chooses 'y',  #
@@ -19,8 +13,10 @@ source 'carbo__verifyRoot.sh'
 #                                                                                                                #
 ##################################################################################################################
 
-MENU="carbo__PerformanceWizard.sh"
+# Check if the user is root
+source 'carbo__verifyRoot.sh'
 
+MENU="carbo__PerformanceWizard.sh"
 SWAPPINESS=$(cat /proc/sys/vm/swappiness)
 LINE_SCRIPT='line_script.sh'
 YES="y"
@@ -62,8 +58,8 @@ case "$removeSwap" in
     echo -e 'Please save all your work before continuing.\n'
     read -rp 'Do you really want to proceed (y/n)? ' proceed
 
-    case "$proceed" in
-    "$YES")
+case "$proceed" in
+"$YES")
         echo -e "\n\033[01;32mCleaning Swap...\033[00;37m\n"
         # Get occupied space before cleaning
         used_before=$(free -k | awk '/^Swap:/ {print $3}')
@@ -92,9 +88,8 @@ case "$removeSwap" in
         echo -e "swappiness set: $SWAPPINESS"
         echo -e "\n\033[01;37m[\033[00;32m Swap is active now! \033[01;37m ]\033m\n"
         sudo swapon --show
-
         ;;
-    "$NO")
+    \"$NO")
         echo "Operation aborted!"
         sleep 2 
         $MENU
