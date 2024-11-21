@@ -1,33 +1,24 @@
 #!/bin/bash
-# Check if the user is root
-if (( EUID != 0 )); then
-    echo "This script needs to be run as root."
-    echo "Please execute this with sudo."
-    exit 1
-fi
-###########################################################################
-#                                                                         #
-# Script:nautilus.sh - Invoke Nautilus by opening a specific directory.   #
-#                                                                         #
-# Author: Apollo Alves                                                    #
-# Date: 16/12/2023                                                        #
-#                                                                         #
-###########################################################################
-
-############################################################################################################################
+####################################################
+# Script: carbo__BackupManager.sh		   #
+# Invoke Nautilus by opening a specific directory. #
+# Author: Apollo Alves                             #
+# Date: 21/11/2024                                 #
+####################################################
+###########################################################################################################################
 #                                                                                                                          #
 # Description : This shell script called "nautilus.sh" is used to invoke the Nautilus file manager and open a specific     #
 # directory. Here is a summary of what it does:                                                                            #
 #                                                                                                                          #
-# 1. Using the command " nautilus /mnt/EXTST500LM012__CLONRAID/", the script invokes the Nautilus file manager        #
-# and opens the directory "/mnt/EXTST500LM012__CLONRAID/".                                                                #
+# 1. Using the command " nautilus /mnt/VENTOY", the script invokes the Nautilus file manager                               #
+# and opens the directory "/mnt/MDSATA".                                                                		   #
 #                                                                                                                          #
 # 2. Next, the script checks if the Nautilus process is running using the command "pgrep -x "nautilus"". If it is running, #
 # it enters a loop.                                                                                                        #
 #                                                                                                                          #
 # 3. In the loop, the script performs the following actions:                                                               #
 # - Redirect empty output to /dev/null to avoid displaying messages.                                                       #
-# - Use the command " killall nautilus" to terminate the Nautilus process.                                             #
+# - Use the command " killall nautilus" to terminate the Nautilus process.                                                 #
 # - Displays the message "closed".                                                                                         #
 #                                                                                                                          #
 # 4. The loop continues until the Nautilus process is no longer running.                                                   #
@@ -36,8 +27,14 @@ fi
 # is running. This can be useful when you need to open Nautilus in a specific directory and make sure it exits after       #
 # being used.                                                                                                              #
 #                                                                                                                          #
-#                                                                                                                          #
 ############################################################################################################################
+
+# Check if the user is root
+if (( EUID != 0 )); then
+    echo "This script needs to be run as root."
+    echo "Please execute this with sudo."
+    exit 1
+fi
 
 # Directory path
 mount /dev/sdd1 /mnt/VENTOY >/dev/null 2>&1
