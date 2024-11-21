@@ -1,24 +1,18 @@
 #!/bin/bash
+#######################################################################################
+# Script: backup_Personal.sh                                                          #
+# Author: Apollo Alves                                                                #
+# Date: 21/11/2024                                                                    #
+# Description:                       						      #
+# This script executes rsync backups for folders: / and /home and logs the results.   #
+#######################################################################################
+
 # Check if the user is root
 if (( EUID != 0 )); then
     echo "This script needs to be run as root."
     echo "Please execute this with sudo."
     exit 1
 fi
-#####################################################################
-#                                                                   #
-# Script: backup_Personal.sh                                        #
-# Author: Apollo Alves                                              #
-# Date: 11/11/2024                                                  #
-#                                                                   #
-#####################################################################
-
-####################################################################################################################
-#                                                                                                                  #
-# Description:                                                                                                     #
-# This script executes rsync backups for folders / and /home, and logs the results.                                #
-#                                                                                                                  #
-####################################################################################################################
 
 MENU='/bin/carbonara.sh'
 clear
