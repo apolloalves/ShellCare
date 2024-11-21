@@ -1,24 +1,20 @@
 #!/bin/bash
+################################################################################
+# Carbonara                                                                    #
+# Script: carbo__ReportSystem.sh                                               #
+# Author: Apollo Alves                                                         #
+# Date: 21/11/2024                                                             #
+#									       #
+# Description                                                                  #
+# System Report Script                                                         #
+# This script generates a comprehensive machine report with various            #
+# system information. It includes details like machine name, OS name,          #
+# kernel version, hardware information, memory details, partition              #
+# information, last boot time, and more. Requires no user interaction.         #
+################################################################################
+
 # Check if the user is root
 source 'carbo__verifyRoot.sh'
-
-#####################################################################
-#                                                                   #
-# Script: report.sh                                                 #
-# Author: Apollo Alves                                              #
-# Date: 16/12/2023                                                  #
-#                                                                   #
-#####################################################################
-
-########################################################################
-#                                                                      #
-# System Report Script                                                 #
-# This script generates a comprehensive machine report with various    #
-# system information. It includes details like machine name, OS name,  #
-# kernel version, hardware information, memory details, partition      #
-# information, last boot time, and more. Requires no user interaction. #
-#                                                                      #
-########################################################################
 
 MENU='carbonara.sh'
 LINE_SCRIPT='carbo__LineScript.sh'
@@ -41,12 +37,14 @@ clear
 $LINE_SCRIPT
 echo -e "Machine Report"
 $LINE_SCRIPT
+
 echo -e "\nMachine Name: $HOSTNAME"
 echo -e "Distro Name: $DISTRONAME"
 echo -e "OS Name: $OSNAME"
 echo -e "Version Kernel: $KERNEL"
 echo -n "Active Machine Since: " && uptime -s
 echo -n "User: " && whoami
+
 echo
 $LINE_SCRIPT
 echo -e "\nHardwares: \n"
@@ -68,7 +66,7 @@ echo -e "Report Date: $DATE"
 $LINE_SCRIPT
 echo
 
-# Esperar por uma tecla pressionada antes de limpar a tela
+# Wait for a key press before clearing the screen
 read -rsn1 -p "Press any key to continue..."
 clear
 

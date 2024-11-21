@@ -1,25 +1,20 @@
 #!/bin/bash
+################################################################################
+# Carbonara                                                                    #
+# Script: carbo__SystemAnalyse.sh                                              #
+# Author: Apollo Alves                                                         #
+# Date: 21/11/2024                                                             #
+#									       #
+# Description  								       #
+# This script is designed to be run with root privileges and performs          #
+# system analysis using systemd-analyze. It provides options to plot           #
+# the results, generate log files, and open relevant files and                 #
+# directories. It checks for the existence of folders and files,               #
+# creates them if necessary, and opens the relevant Nautilus instance.         #
+###############################################################################
+
 # Check if the user is root
 source 'carbo__verifyRoot.sh'
-
-#####################################################################
-#                                                                   #
-# Script: system__analyse.sh                                        #
-# Author: Apollo Alves                                              #
-# Date: 16/12/2023                                                  #
-#                                                                   #
-#####################################################################
-
-########################################################################
-#                                                                      #
-# System Analyse Script                                                #
-# This script is designed to be run with root privileges and performs  #
-# system analysis using systemd-analyze. It provides options to plot   #
-# the results, generate log files, and open relevant files and         #
-# directories. It checks for the existence of folders and files,       #
-# creates them if necessary, and opens the relevant Nautilus instance. #
-#                                                                      #
-########################################################################
 
 YES="y"
 NO="n"

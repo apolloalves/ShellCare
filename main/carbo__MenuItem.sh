@@ -29,8 +29,9 @@ echo -e "\033[1;36m[\033[0m 06\033[1;36m ]\033[0m Verify Startup time System"
 echo -e "\033[1;36m[\033[0m 07\033[1;36m ]\033[0m Boot messages wizard ( journalctl -b )"
 echo -e "\033[1;36m[\033[0m 08\033[1;36m ]\033[0m List of disabled services"
 echo -e "\033[1;36m[\033[0m 09\033[1;36m ]\033[0m Report"
-echo -e "\033[1;36m[\033[0m 10\033[1;36m ]\033[0m Reboot System"
+echo -e "\033[1;36m[\033[0m 10\033[1;36m ]\033[0m Services Wizard"
 echo -e "\033[1;36m[\033[0m 11\033[1;36m ]\033[0m Clear Rubbish bin"
+echo -e "\033[1;36m[\033[0m 12\033[1;36m ]\033[0m Reboot System"
 echo -e "\033[1;36m[\033[0m E\033[1;36m  ]\033[0m EXIT\n"
 
 

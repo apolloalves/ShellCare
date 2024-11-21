@@ -29,7 +29,7 @@ source 'carbo__verifyRoot.sh'
 
 clear
 LINE_SCRIPT='carbo__LineScript.sh'
-MENU='/bin/carbonara.sh'
+MENU='carbo__ServicesWizard.sh'
 DIR='/home/plot'
 
 mkdir $DIR

@@ -35,11 +35,9 @@ if [ "$option_choice" != "e" ] && [ "$option_choice" != "E" ]; then
         1)
             carbo__EggsWizard.sh
             ;;
-
         2)
-           carbo__BackupPersonal.sh
+            carbo__BackupPersonal.sh
             ;;
-
         3)
             carbo__ClonraidBackups.sh
             ;;
@@ -50,26 +48,27 @@ if [ "$option_choice" != "e" ] && [ "$option_choice" != "E" ]; then
             carbo__PerformanceWizard.sh
             ;;
 	6)
-            system__analyse.sh
+            carbo__SystemAnalyse.sh
             ;;
 	7)
 	    carbo__ShowJournalctl.sh
             ;;
         8)
-           carbo__DisabledListServices.sh
-           ;;
+            carbo__DisabledListServices.sh
+            ;;
         9)
-           carbo__report.sh
-           ;;
-
+            carbo__ReportSystem.sh
+            ;;
         10)
-           carbo__RebootSystem.sh
+           carbo__ServicesWizard.sh
            ;;
-
         11)
-           carbo__RubbishBin.sh
-           ;;
+            carbo__RubbishBin.sh
+            ;;
 
+        12)
+            carbo__RebootSystem.sh
+            ;;
         *)
             echo -e "\033[01;05;37m'$option_choice' command not found!\033[00m\n"
             sleep 2
