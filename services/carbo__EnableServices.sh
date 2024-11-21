@@ -1,9 +1,9 @@
 #!/bin/bash
 ##########################################################################################################################
 # Carbonara                                  										 #
-# Script : carbo__EnableServices.sh            										 #
-# Author : Apollo Alves                     										 #
-# Date   : 21/11/2024                        									         #
+# Script: carbo__EnableServices.sh            										 #
+# Author: Apollo Alves                     										 #
+# Date  : 21/11/2024                        									         #
 #														         #
 # Description: This is a bash script that enables some system services at boot. I'll explain what each part does:        #
 # The script starts with a header that contains information about the author and creation date.                          #

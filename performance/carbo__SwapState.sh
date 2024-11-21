@@ -1,7 +1,5 @@
 
 #!/bin/bash
-# Check if the user is root
-source 'carbo__verifyRoot.sh'
 ################################################################################
 # Carbonara                                                                    #
 # Script: carbo__SwapState.sh                                                  #
@@ -26,7 +24,9 @@ source 'carbo__verifyRoot.sh'
 # identifying whether swap memory is being used by the system.                 #
 ################################################################################
 
-carbo__PerformanceWizard.sh
+# Check if the user is root
+source 'carbo__verifyRoot.sh'
+source carbo__PerformanceWizard.sh
 echo -e "\nSwap Sate\n"
 free -h
 carbo__LineScript.sh
