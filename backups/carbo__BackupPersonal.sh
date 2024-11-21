@@ -1,6 +1,6 @@
 #!/bin/bash
 #######################################################################################
-# Script: backup_Personal.sh                                                          #
+# Script: carbo__BackupPersonal.sh                                                    #
 # Author: Apollo Alves                                                                #
 # Date: 21/11/2024                                                                    #
 # Description:                       						      #

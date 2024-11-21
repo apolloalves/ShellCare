@@ -1,4 +1,11 @@
 #!/bin/bash
+############################################################################
+# Script: carbo__ProgressBar.sh                                            #
+# Author: Apollo Alves                                                     #
+# Date: 21/11/2024                                                         #
+# Description: Shows a progress bar.                                       #
+							                   #
+############################################################################
 
 clear
 # Exibe mensagem em amarelo negrito
@@ -24,9 +31,9 @@ echo -e "\n\033[1;33mEXECUTING BACKUP OF ROOT FOLDER\033[0m"
     done
 ) &
 
-# Guarda o PID do processo de loop
+# Store the PID of the loop process
 LOOP_PID=$!
 
-# Exec anyway
-# Quando o backup terminar, o laço é finalizado
+# Exec anyway here!
+# When the backup is complete, the loop is terminated
 kill $LOOP_PID
