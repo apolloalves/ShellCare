@@ -1,25 +1,18 @@
 #!/bin/bash
-#########################################################################
-#                                                                       #
-# Script: menu.sh - Item Menu                                           #           
-# Author: Apollo Alves                                                  #
-# Date: 16/12/2023                                                      #
-#                                                                       #
-#########################################################################
+#############################################################################################
+# Carbonara                                                                                 #
+# Script: carbo__MenuItem.sh                                                                #
+# Author: Apollo Alves                                                                      #
+# Date: 21/11/2024                                                      		    #
+# 											    #
+# Description:                                                                              #
+# This bash script provides a menu with various system-related options for easy management. #
+# Each option corresponds to a specific task, such as updating system packages,             #
+# optimizing performance, checking system boot time, disabling native services, and more.   #                                                                                           #
+#############################################################################################
 
-##########################################################################################################
-#                                                                                                        #
-# Description: This bash script provides a menu with various system-related options for easy management. #
-# Each option corresponds to a specific task, such as updating system packages, optimizing performance,  #
-# checking system boot time, disabling native services, and more.                                        #
-#                                                                                                        #
-##########################################################################################################
-
-######################################################################################################################################################################################
 LINE='/bin/carbo__LineScript.sh'
 echo -e "\n\033[1;97;100m              Carbonara           \033[0m\033[1;30;107m          Apollo Alves         \033[1;97;100m    OS: Arch Linux x86_64      \033[0m"
-
-######################################################################################################################################################################################
 
 echo
 neofetch
@@ -27,9 +20,6 @@ $LINE
 echo -e "\033[01;97m Enter a menu option: \033[0m"
 $LINE
 echo
-
-######################################################################################################################################################################################
-
 echo -e "\033[1;36m[\033[0m 01\033[1;36m ]\033[0m Penguin's Eggs Wizard"
 echo -e "\033[1;36m[\033[0m 02\033[1;36m ]\033[0m Rsync Backup System"
 echo -e "\033[1;36m[\033[0m 03\033[1;36m ]\033[0m Open Clonraid Backups"

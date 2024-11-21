@@ -19,7 +19,7 @@
 source 'carbo__verifyRoot.sh'
 
 # Defines the root directory from which find will be run
-ROOT_DIR="/home/carbonara"
+ROOT_DIR="/home/apollo/carbonara"
 echo -e "\n\033[01;37m\033[01mwait...\033[00;37m\033[00m\n"
 
 # Use the find command to locate the "Carbonara" folder
