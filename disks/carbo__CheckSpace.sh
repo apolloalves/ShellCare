@@ -1,32 +1,26 @@
 #!/bin/bash
-
-#####################################################################
-#                                                                   #
-# Script: check__space.sh                                           #
-# Author: Apollo Alves                                              #
-# Date: 16/12/2023                                                  #
-#                                                                   #
-#####################################################################
-
-#####################################################################################################################
-#                                                                                                                   #
-# Description: This shell script called "checkSpace.sh" performs some disk space checks. Here is a summary of what  # 
-# it does:                                                                                                          #
-# 1. Displays a space check message.                                                                                #
-# 2. Wait 1 second.                                                                                                 #
-# 3. Run the commands "df -h /", "df -h /home" and "df -h /mnt/MDSATA" to display disk space      		    #
-# information in the root, /home and /mnt/EXT@ directories ST500LM012__CLONRAID, respectively.                      #
-# 4. Displays a message indicating that the verification completed successfully.                                    #
-#                                                                                                                   #
-# Basically, this script prints information about available disk space in the mentioned directories. It can be used #
-# to monitor disk space and verify that enough space is available.                                                  #
-#                                                                                                                   #
-#####################################################################################################################
+#######################################################################################################
+# Script: carbo__CheckSpace.sh                                                                        #
+# Author: Apollo Alves                                                                                #
+# Date: 21/11/2024                                                                                    #
+#                                                                                                     #
+# Description:                                                                                        #
+# This shell script called "checkSpace.sh" performs some disk space checks. Here is a summary of what #
+# it does:                                                                                            #
+# 1. Displays a space check message.                                                                  #
+# 2. Wait 1 second.                                                                                   #
+# 3. Run the commands "df -h /", "df -h /home" and "df -h /mnt/MDSATA" to display disk space          #
+# information in the root, /home and /mnt/EXT@ directories ST500LM012__CLONRAID, respectively.        #
+#                                                                                                     #
+# 4. Displays a message indicating that the verification completed successfully.                      #
+# Basically, this script prints information about available disk space in the mentioned directories.  #
+# It can be used to monitor disk space and verify that enough space is available.                     #
+#######################################################################################################
 
 MENU='/bin/carbonara.sh'
-clear_screen() {
 
-    printf "\033c"
+clear_screen() {
+  printf "\033c"
 }
 
 clear_screen
