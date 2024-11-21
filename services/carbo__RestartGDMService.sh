@@ -1,25 +1,17 @@
 #!/bin/bash
+################################################################################
+# Carbonara                                           			       #
+# Script: carbo__RestartGDMService.sh			                       #
+# Author : Apollo Alves                     				       #
+# Date : 21/11/2024                                                            #
+# 									       #
+# Description							               #
+# Description: Script responsible for restarting the gdm.service service       #
+################################################################################
+
 # Check if the user is root
 source 'carbo__verifyRoot.sh'
 
-#####################################################################
-#                                                                   #
-# Script: reinstall__gnome-gdm3.sh                                  #
-# Author: Apollo Alves                                              #
-# Date: 16/12/2023                                                  #
-#                                                                   #
-#####################################################################
-
-#############################################################################
-#                                                                           #
-# Reinstall GDM3 Script                                                     #
-# This script reinstalls the GNOME Display Manager (GDM3) on a Debian-based #
-# system. It checks if the user has root privileges and then proceeds to    #
-# reinstall GDM3 using the 'apt' package manager. Requires root privileges  #
-# to run.                                                                   #
-#                                                                           #
-#                                                                           #
-#############################################################################
 echo -e "\n\033[01;32mRestating gdm3...\033[00;37m\n"
 sleep 2
 systemctl restart gdm.service

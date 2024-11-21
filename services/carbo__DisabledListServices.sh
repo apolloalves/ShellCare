@@ -1,33 +1,28 @@
 #!/bin/bash
+################################################################################
+# Carbonara                                                                    #
+# Script: carbo__DisabledListServices.sh                             	       #
+# Author: Apollo Alves                                             	       #
+# Date: 21/11/2024                                                             #
+#									       #
+# Description: This script, when executed with root privileges, generates a    #
+# list of disabled services on the system and saves it to a log file.          #
+# The log file is located at $HOME/plot/Disable-ServicesList.log.     	       #
+# It uses systemctl to list unit files of type service, filters the ones       #
+# marked# as 'disable', and outputs the list with LINE_SCRIPT numbers.         #
+# A separator LINE_SCRIPT is displayed before and after the list.              #
+#                                                                              #
+# Usage:                                                                       #
+# Execute the script with root privileges.                                     #
+#                                                                              #
+# Example:                                                                     #
+# sudo ./carbo__DisabledListServices.sh                                        #
+################################################################################
+
 # Check if the user is root
 source 'carbo__verifyRoot.sh'
-
-#####################################################################
-#                                                                   #
-# Script: disabled__ListServices.sh                                 #
-# Author: Apollo Alves                                              #
-# Date: 16/12/2023                                                  #
-#                                                                   #
-#####################################################################
-
-#######################################################################
-# This script, when executed with root privileges, generates a list   #
-# of disabled services on the system and saves it to a log file.      #
-# The log file is located at $HOME/plot/Disable-ServicesList.log.     #
-# It uses systemctl to list unit files of type service, filters the   #
-# ones marked as 'disable', and outputs the list with LINE_SCRIPT     #
-# numbers.                                                            #
-# A separator LINE_SCRIPT is displayed before and after the list.     #
-#                                                                     #
-# Usage:                                                              #
-#   - Execute the script with root privileges.                        #
-#                                                                     #
-# Example:                                                            #
-#    ./disabled__ListServices.sh                                      #
-#                                                                     #
-######################################################################
-
 clear
+
 LINE_SCRIPT='carbo__LineScript.sh'
 MENU='carbo__ServicesWizard.sh'
 DIR='/home/plot'
