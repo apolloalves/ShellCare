@@ -1,28 +1,22 @@
 #!/bin/bash
-# Check if the user is root
-source 'carbo__verifyRoot.sh'
-
-
 ############################################################################
-#                                                                          #
-# Script: removepack.sh For updates packages of system and                 #
-# optimizer performance.                                                   #
-#                                                                          #
+# carbonara                                                                #
+# Script: carbo__PacmanCleanCache.sh 					   #
 # Author: Apollo Alves                                                     #
 # Date: 16/12/2023                                                         #
-#                                                                          #
+# 							  		   #
+# Description     							   #
+# optimizer performance.                                                   #
+# Remove It removes:   							   #
+  # cache and log files                 				   #
+  # cleans the system 							   #
+  # removes orphaned libraries 						   #
+  # clears the rubbish bin, and           				   #
+  # Requires root privileges to run.                                       #
 ############################################################################
 
-#############################################################################
-#                                                                           #
-# Remove Package and Optimize Performance Script                            #
-# This script is designed to update system packages and optimize            #
-# system performance. It removes cache and log files, cleans the            #
-# system, removes orphaned libraries, clears the rubbish bin, and           #
-# removes old snaps. It checks for root privileges before executing.        #
-# Requires root privileges to run.                                          #
-#                                                                           #
-#############################################################################
+# Check if the user is root
+source 'carbo__verifyRoot.sh'
 
 # Function to print status
 print_status() {
@@ -34,30 +28,29 @@ print_status() {
 }
 
 
-# GREEN MESSAGE
+# YELLOW MESSAGE
 #############################################################################
-echo -e "\n\033[01;32mRemoving cache and logs files system...\033[00;37m\n" #
+echo -e "\n\033[1;33mRemoving cache and logs files system...\033[0m"
 #############################################################################
 
 sleep 2
 rm -rfv /var/lib/apt/lists/lock
 rm -rfv /var/lib/dpkg/lock-frontend
 rm -rfv /var/lib/apt/lists/*
-rm -rfv /var/lib/dpkg/lock
 rm -rfv ~/.cache/thumbnails/*
 rm -rfv ~/.cache/thumbnails/normal/*
 rm -rf ~/.cache/icon*
 rm -rfv /var/cache/apt/archives/lock
 rm -rfv ~/.cache/tracker/
+rm -Rfv /var/log/*
 find /var/log/ ! -name 'syslog' -type f -exec rm -fv {} +
-# rm -Rfv /var/log/*
 
 # OK MESSAGE
 print_status
 
-# GREEN MESSAGE
+# YELLOW MESSAGE
 #############################################################################
-echo -e "\n\033[01;32mCleaning files system...\033[00;37m\n" #              #
+echo -e "\n\033[1;33mCleaning files system...\033[0m"
 #############################################################################
 
 pacman -Scc --noconfirm
@@ -65,9 +58,10 @@ pacman -Scc --noconfirm
 # OK MESSAGE
 print_status
 
-# GREEN MESSAGE
+
+# YELLOW MESSAGE
 #############################################################################
-echo -e "\n\033[01;32mRemoving Rubbish Bin files...\033[00;37m\n"           #
+echo -e "\n\033[1;33mRemoving Rubbish Bin files...\033[0m"
 #############################################################################
 
 rm -rfv .local/share/Trash/*
