@@ -1,5 +1,6 @@
 #!/bin/bash
 #######################################################
+# Carbonara                                           #
 # Script: carbo__BackupManager.sh		      #
 # Invoke Nautilus by opening a specific directory.    #
 # Author: Apollo Alves                                #

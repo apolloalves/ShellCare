@@ -1,5 +1,6 @@
 #! /bin/bash
 ##################################################################################
+# Carbonara                                                                      #
 # Script: carbo__ShowBrootEggs.sh                                                #
 # Author: Apollo Alves                                                           #
 # Date: 21/11/2024                                                               #

@@ -1,28 +1,25 @@
 #!/bin/bash
+################################################################################
+# Carbonara                                                                    #
+# Script: carbo__EggsWizard.sh                                                 #
+# Author: Apollo Alves                                                         #
+# Date: 21/11/2024                                                             #
+#                                                                              #
+# Description:                                                                 #
+# This script serves as a menu for managing Penguin's Eggs, providing options  #
+# to create, check, and open files with                                        #
+# broot or Nautilus file managers. It also allows installation of              #
+# Penguin's Eggs and Calamares.                                                #
+################################################################################
+
 # Check if the user is root
 if (( EUID != 0 )); then
     echo "This script needs to be run as root."
     echo "Please execute this with sudo."
     exit 1
 fi
-#####################################################################
-#                                                                   #
-# Script: eggs__wizard.sh                                           #
-# Author: Apollo Alves                                              #
-# Date: 16/12/2023                                                  #
-#                                                                   #
-#####################################################################
-######################################################################################################################
-#                                                                                                                    #
-# Description:                                                                                                       #
-# This script serves as a menu for managing Penguin's Eggs, providing options to create, check, and open files with  #
-# broot or Nautilus file managers. It also allows installation of Penguin's Eggs and Calamares.                      #
-#                                                                                                                    #
-######################################################################################################################
-sleep 2
-clear
 
-######################################################################################################################################################################################
+clear
 MENU='/bin/carbonara.sh'
 EGGSCREATE='/bin/carbo__EggsCreate.sh'
 EGGSCHECK='/bin/carbo__EggsCheck.sh'
@@ -31,27 +28,19 @@ EGGSINSTALL='/bin/carbo__EggsInstall.sh'
 MANAGER='/bin/carbo__BackupManager.sh'
 EGGSMENU='/bin/carbo__EggsWizard.sh'
 
-######################################################################################################################################################################################
 LINE_SCRIPT='carbo__LineScript.sh'
 echo -e "\033[1;97;100m               carbonara            \033[0m\033[1;30;107m        Apollo Alves        \033[1;97;100m        Penguin's Eggs Wizard       \033[0m"
-######################################################################################################################################################################################
+
 echo
-# $LINE_SCRIPT
 echo -e "\033[01;97m Input an option from the menu: \033[0m"
 $LINE_SCRIPT
 echo
-######################################################################################################################################################################################
-
 echo -e "\033[01;32m[\033[01;37m 1\033[01;32m ]\033[00;37m - Create Penguin's Eggs\033m"
 echo -e "\033[01;32m[\033[01;37m 2\033[01;32m ]\033[00;37m - Check Penguin's Eggs .iso\033m"
 echo -e "\033[01;32m[\033[01;37m 3\033[01;32m ]\033[00;37m - Open my Penguin's Eggs Files - broot file manager\033m"
 echo -e "\033[01;32m[\033[01;37m 4\033[01;32m ]\033[00;37m - Open my Penguin's Eggs Files - Nautilus file manager\033m"
-# echo -e "\033[01;32m[\033[01;37m 5\033[01;32m ]\033[00;37m - Open my Penguin's Eggs Files in Google Drive backup folders \033m"
 echo -e "\033[01;32m[\033[01;37m 5\033[01;32m ]\033[00;37m - Penguin's Eggs and Calamares Install \033m"
 echo -e "\033[01;32m[\033[01;37m E\033[01;32m ]\033[00;37m - Exit\033m"
-
-######################################################################################################################################################################################
-
 echo
 $LINE_SCRIPT
 formatted_prompt=$(printf "\e[1;97mInput option :\e[0m ")
@@ -63,7 +52,6 @@ valid_option=true
 
 if [ "$option_choice" != "e" ] && [ "$option_choice" != "E" ]; then
 
-
     if [ "$valid_option" = true ]; then
 
         case "$option_choice" in
@@ -72,7 +60,6 @@ if [ "$option_choice" != "e" ] && [ "$option_choice" != "E" ]; then
             $EGGSCREATE
             ;;
         2)
-
             $EGGSCHECK
             ;;
         3)
