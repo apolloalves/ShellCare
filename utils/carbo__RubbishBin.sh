@@ -14,7 +14,7 @@ source 'carbo__verifyRoot.sh'
 # the rubbish bin and close any active Nautilus instances.                     #
 ################################################################################
 
-MENU='/bin/carbo__Carbonara.sh'
+MENU='/bin/carbonara.sh'
 
 pkill nautilus
 echo "nautilus is closed!"
