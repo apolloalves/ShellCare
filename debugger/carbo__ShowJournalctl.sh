@@ -3,7 +3,7 @@
 # Carbonara                                            								 #
 # Script: carbo__ShowJournalctl.sh                                                                               #
 # Author: Apollo Alves                                                                                           #
-# Date: 21/11/2024                                                                                               #
+# Date  : 21/11/2024                                                                                             #
 #                                                                                                                #
 # Description:                                                                                                   #
 # This script provides options to view and monitor system logs using journalctl. It includes commands to view    #

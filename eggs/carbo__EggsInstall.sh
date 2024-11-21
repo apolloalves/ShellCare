@@ -2,9 +2,9 @@
 ################################################################################
 # Carbonara                                                                    #
 # Script: carbo__EggsInstall.sh 					       #
-# Penguins-eggs Installation Script                                            #
 # Author: Apollo Alves                                                         #
-# Date: 16/12/2023                                                             #
+# Date  : 21/11/2024                                                           #
+# Penguins-eggs Installation Script                                            #
 #                                                                              #
 # Description:                                                                 #
 # This script automates the installation of Penguins-eggs on a Debian-         #

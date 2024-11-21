@@ -3,9 +3,9 @@
 # Carbonara                                                                    #
 # Script: carbo__ClonraidBackups.sh                                            #
 # Author: Apollo Alves                                                         #
-# Date: 21/11/2024                                                             #
+# Date  : 21/11/2024                                                           #
+#									       #
 # Description:                                                                 #
-#								               #
 # This script opens Nautilus file manager to access a specific directory.      #
 # It provides feedback indicating whether  				       #
 # the operation was successful.                                                #

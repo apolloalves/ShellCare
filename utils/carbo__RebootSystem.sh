@@ -3,7 +3,7 @@
 # Carbonara                                                                    #
 # Script: carbo__RebootSystem.sh                                               #
 # Author: Apollo Alves                                                         #
-# Date: 21/11/2024                                                             #
+# Date  : 21/11/2024                                                           #
 #                                                                              #
 # Description: 	Reboot System Script                                           #
 # This script prompts the user if they want to restart the system  and         #

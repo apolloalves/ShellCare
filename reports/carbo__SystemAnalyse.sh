@@ -3,7 +3,7 @@
 # Carbonara                                                                    #
 # Script: carbo__SystemAnalyse.sh                                              #
 # Author: Apollo Alves                                                         #
-# Date: 21/11/2024                                                             #
+# Date  : 21/11/2024                                                           #
 #									       #
 # Description  								       #
 # This script is designed to be run with root privileges and performs          #

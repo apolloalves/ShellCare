@@ -5,7 +5,7 @@ source 'carbo__verifyRoot.sh'
 # Carbonara                                                                    #
 # Script: carbo__RubbishBin.sh                                                 #
 # Author: Apollo Alves                                                         #
-# Date: 21/11/2024                                                             #
+# Date  : 21/11/2024                                                           #
 #                                                                              #
 # Description: Rubbish Bin Script                                              #
 # This script is designed to be run with root privileges and removes           #

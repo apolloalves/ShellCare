@@ -3,7 +3,7 @@
 # Carbonara                                                                    #
 # Script: carbo__InstallBins.sh - Carbonara Setup Script                       #
 # Author: Apollo Alves                                                         #
-# Date: 21/11/2024                                                             #
+# Date  : 21/11/2024                                                           #
 #                                                                              #
 # Description:                                                                 #
 # This script automates the setup process for Carbonara. It performs           #

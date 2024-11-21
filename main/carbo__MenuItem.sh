@@ -3,7 +3,7 @@
 # Carbonara                                                                                 #
 # Script: carbo__MenuItem.sh                                                                #
 # Author: Apollo Alves                                                                      #
-# Date: 21/11/2024                                                      		    #
+# Date  : 21/11/2024                                                      		    #
 # 											    #
 # Description:                                                                              #
 # This bash script provides a menu with various system-related options for easy management. #

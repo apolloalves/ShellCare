@@ -2,8 +2,8 @@
 ################################################################################
 # Carbonara                                           			       #
 # Script: carbo__RestartGDMService.sh			                       #
-# Author : Apollo Alves                     				       #
-# Date : 21/11/2024                                                            #
+# Author: Apollo Alves                     				       #
+# Date  : 21/11/2024                                                           #
 # 									       #
 # Description							               #
 # Description: Script responsible for restarting the gdm.service service       #

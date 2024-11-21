@@ -1,9 +1,9 @@
 #!/bin/bash
 ################################################################################
 # Carbonara                                                                    #
-# Script: carbo__EggsCreate.sh                                                 #
+# Script : carbo__EggsCreate.sh                                                #
 # Created: 16/12/2023                                                          #
-# Author: Apollo Alves                                                         #
+# Author : Apollo Alves                                                        #
 ################################################################################                                                                                                                      #
 
 # Check if the user is root

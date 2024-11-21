@@ -3,14 +3,13 @@
 # Carbonara                                                          						 #
 # Script: carbo__CleanupSwap.sh                                     						 #
 # Author: Apollo Alves                                              						 #
-# Date: 21/11/2024                                                  						 #
+# Date  : 21/11/2024                                                  						 #
 #														 #
 # Description:                                                                                                   #
 # This script checks if the user has root privileges. If not, it exits with an error message.                    #
 # It then prompts the user to decide whether to remove the contents of the swap space. If the user chooses 'y',  #
 # it proceeds to clean the swap space, turning it off and on to free up space. It also recreates the swap file   #
 # with a size of 8 GB and adjusts the swappiness value to improve system performance.                            #
-#                                                                                                                #
 ##################################################################################################################
 
 # Check if the user is root
@@ -89,7 +88,7 @@ case "$proceed" in
         echo -e "\n\033[01;37m[\033[00;32m Swap is active now! \033[01;37m ]\033m\n"
         sudo swapon --show
         ;;
-    \"$NO")
+    "$NO")
         echo "Operation aborted!"
         sleep 2 
         $MENU

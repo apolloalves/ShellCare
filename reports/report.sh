@@ -10,7 +10,7 @@
 # This script generates a comprehensive machine report with various            #
 # system information. It includes details like machine name, OS name,          #
 # kernel version, hardware information, memory details, partition              #
-# information, last boot time, and more. Requires no user interaction.         #
+# information, last boot time, and more. Requires no user interction.         #
 ################################################################################
 
 # Check if the user is root

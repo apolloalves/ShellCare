@@ -3,7 +3,7 @@
 # carbonara                                                                    #
 # Script: carbo__PacmanCleanCache.sh 					       #
 # Author: Apollo Alves                                                         #
-# Date: 16/12/2023                                                             #
+# Date  : 21/11/2024                                                           #
 # 							  		       #
 # Description     							       #
 # optimizer performance.                                                       #

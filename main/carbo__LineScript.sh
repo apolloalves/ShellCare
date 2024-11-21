@@ -3,7 +3,7 @@
 # Carbonara                                                                                  #
 # Script: line_script.sh - Enter a LINE_SCRIPT after each command                            #
 # Author: Apollo Alves                                                                       #
-# Date: 21/11/2024                                                                           #
+# Date  : 21/11/2024                                                                         #
 #                									     #
 # Description : This bash code creates a LINE_SCRIPT containing 90 trace characters (─) and  #
 # prints this LINE_SCRIPT on    							     #

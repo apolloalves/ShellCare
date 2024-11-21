@@ -3,7 +3,7 @@
 # Carbonara                                                                           #
 # Script: carbo__BackupPersonal.sh                                                    #
 # Author: Apollo Alves                                                                #
-# Date: 21/11/2024                                                                    #
+# Date  : 21/11/2024                                                                  #
 # Description:                       						      #
 # This script executes rsync backups for folders: / and /home and logs the results.   #
 #######################################################################################

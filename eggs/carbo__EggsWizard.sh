@@ -3,7 +3,7 @@
 # Carbonara                                                                    #
 # Script: carbo__EggsWizard.sh                                                 #
 # Author: Apollo Alves                                                         #
-# Date: 21/11/2024                                                             #
+# Date  : 21/11/2024                                                           #
 #                                                                              #
 # Description:                                                                 #
 # This script serves as a menu for managing Penguin's Eggs, providing options  #

@@ -3,7 +3,7 @@
 # Carbonara                                                         	       #
 # Script: carbo__PerformanceWizard.sh                                          #
 # Author: Apollo Alves                                                         #
-# Date: 21/11/2024                                                             #
+# Date  : 21/11/2024                                                           #
 ################################################################################
 
 # Check if the user is root

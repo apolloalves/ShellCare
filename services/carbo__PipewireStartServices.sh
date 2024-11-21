@@ -2,8 +2,8 @@
 ################################################################################
 # Carbonara                                           			       #
 # Script: carbo__PipewireStartServices.sh			               #
-# Author : Apollo Alves                     				       #
-# Date : 21/11/2024                                                            #
+# Author: Apollo Alves                     				       #
+# Date  : 21/11/2024                                                           #
 # 									       #
 # Description: Script responsible for enabling and starting all PipeWire       #
 # services:                              				       #

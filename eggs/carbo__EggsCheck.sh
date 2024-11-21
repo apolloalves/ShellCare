@@ -1,9 +1,9 @@
 #!/bin/bash
 ########################################################################################################################
 # Carbonara                                           								       #
-# Script: carbo__EggsCheck.sh                                                                                          #
+# Script : carbo__EggsCheck.sh                                                                                         #
 # Created: 21/11/2024                                                                                                  #
-# Author: Apollo Alves                                                                                                 #
+# Author : Apollo Alves                                                                                                #
 #                                                                                                                      #
 # Description:                                                                                                         #
 # This shell script, named "carbo__EggsCheck.sh," performs the following tasks:                                        #

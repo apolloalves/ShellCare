@@ -3,7 +3,7 @@
 # Carbonara                                                                    #
 # Script: carbo__verifyRoot.sh                                                 #
 # Author: Apollo Alves                                                         #
-# Date: 21/11/2024                                                             #
+# Date  : 21/11/2024                                                           #
 # Description: Script responsible for checking if the user is root             #
 ################################################################################
 

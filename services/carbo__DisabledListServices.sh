@@ -3,7 +3,7 @@
 # Carbonara                                                                    #
 # Script: carbo__DisabledListServices.sh                             	       #
 # Author: Apollo Alves                                             	       #
-# Date: 21/11/2024                                                             #
+# Date  : 21/11/2024                                                           #
 #									       #
 # Description: This script, when executed with root privileges, generates a    #
 # list of disabled services on the system and saves it to a log file.          #

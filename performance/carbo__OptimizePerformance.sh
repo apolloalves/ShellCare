@@ -2,7 +2,7 @@
 ################################################################################
 # Script: carbo__OptimizePerformance.sh                                        #
 # Author: Apollo Alves                                                 	       #
-# Date: 21/11/2024                                                  	       #
+# Date  : 21/11/2024                                                  	       #
 #                                                                              #
 # Optimize Performance Script                                                  #
 # This script is designed to optimize the performance of a GNU/Linux system.   #

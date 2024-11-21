@@ -2,8 +2,8 @@
 #########################################################################################################
 # Carbonara                                           							#
 # Script: carbo__DisableServices.sh 									#
-# Author : Apollo Alves                     								#
-# Date : 21/11/2024                         								#
+# Author: Apollo Alves                     								#
+# Date  : 21/11/2024                         								#
 #                                                                                                       #
 # Description:                                                                                          #
 # This bash script is designed to disable specific system services at boot. It provides explanations    #

@@ -3,7 +3,7 @@
 # Carbonara                                                                                           #
 # Script: carbo__CheckSpace.sh                                                                        #
 # Author: Apollo Alves                                                                                #
-# Date: 21/11/2024                                                                                    #
+# Date  : 21/11/2024                                                                                  #
 #                                                                                                     #
 # Description:                                                                                        #
 # This shell script called "checkSpace.sh" performs some disk space checks. Here is a summary of what #
