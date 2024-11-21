@@ -14,7 +14,6 @@
 # Check if the user is root
 source 'carbo__verifyRoot.sh'
 
-
 TARGETPATH="/mnt/VENTOY"
 echo "Checking device..."
 sleep 2

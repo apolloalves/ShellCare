@@ -1,11 +1,11 @@
 #!/bin/bash
-#######################################################
-# Carbonara                                           #
-# Script: carbo__BackupManager.sh		      #
-# Invoke Nautilus by opening a specific directory.    #
-# Author: Apollo Alves                                #
-# Date: 21/11/2024                                    #
-#######################################################
+################################################################################
+# Carbonara                                                                    #
+# Script: carbo__BackupManager.sh		                               #
+# Invoke Nautilus by opening a specific directory.                             #
+# Author: Apollo Alves                                                         #
+# Date: 21/11/2024                                   			       #
+################################################################################
 
 # Check if the user is root
 source 'carbo__verifyRoot.sh'

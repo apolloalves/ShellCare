@@ -11,7 +11,6 @@
 # Check if the user is root
 source 'carbo__verifyRoot.sh'
 
-
 MENU='/bin/carbonara.sh'
 clear
 

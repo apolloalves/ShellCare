@@ -26,12 +26,7 @@ alias lsblkd='lsblk --output=NAME,MODEL,PATH,FSAVAIL,FSROOTS,FSSIZE,FSTYPE,FSUSE
 alias cl='xsel -clipboard --clear; printf "\nclipboard was cleaner!\n"'
 alias rb='clear; trash-empty --all; printf "Rubbish is clear!\n"'
 
-
-
-
-
-
-# Habilitar auto-complete de comandos
+# Enable command auto-completion
 if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
 fi

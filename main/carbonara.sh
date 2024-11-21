@@ -1,13 +1,13 @@
 #!/bin/bash
-############################################################################
-# Carbonara                                                                #
-# Script: carbonara.sh                                                     #
-# Author: Apollo Alves                                                     #
-# Date: 21/11/2024                                                         #
-# Description: Multifunctional tool designed to simplify and automate      #
-# administration tasks on Linux.                                           #
-							                   #
-############################################################################
+################################################################################
+# Carbonara                                                                    #
+# Script: carbonara.sh                                                         #
+# Author: Apollo Alves                                                         #
+# Date: 21/11/2024                                                             #
+#									       #
+# Description: Multifunctional tool designed to simplify and automate          #
+# administration tasks on Linux.                                               #
+################################################################################
 
 source ~/.bashrc
 

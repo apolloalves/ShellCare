@@ -1,19 +1,19 @@
 #!/bin/bash
-############################################################################
-# carbonara                                                                #
-# Script: carbo__PacmanCleanCache.sh 					   #
-# Author: Apollo Alves                                                     #
-# Date: 16/12/2023                                                         #
-# 							  		   #
-# Description     							   #
-# optimizer performance.                                                   #
-# Remove It removes:   							   #
-  # cache and log files                 				   #
-  # cleans the system 							   #
-  # removes orphaned libraries 						   #
-  # clears the rubbish bin, and           				   #
-  # Requires root privileges to run.                                       #
-############################################################################
+################################################################################
+# carbonara                                                                    #
+# Script: carbo__PacmanCleanCache.sh 					       #
+# Author: Apollo Alves                                                         #
+# Date: 16/12/2023                                                             #
+# 							  		       #
+# Description     							       #
+# optimizer performance.                                                       #
+# Remove It removes:   							       #
+  # cache and log files                 				       #
+  # cleans the system 							       #
+  # removes orphaned libraries 						       #
+  # clears the rubbish bin, and           				       #
+  # Requires root privileges to run.                                           #
+################################################################################
 
 # Check if the user is root
 source 'carbo__verifyRoot.sh'
@@ -29,9 +29,9 @@ print_status() {
 
 
 # YELLOW MESSAGE
-#############################################################################
+################################################################################
 echo -e "\n\033[1;33mRemoving cache and logs files system...\033[0m"
-#############################################################################
+################################################################################
 
 sleep 2
 rm -rfv /var/lib/apt/lists/lock
@@ -49,9 +49,9 @@ find /var/log/ ! -name 'syslog' -type f -exec rm -fv {} +
 print_status
 
 # YELLOW MESSAGE
-#############################################################################
+################################################################################
 echo -e "\n\033[1;33mCleaning files system...\033[0m"
-#############################################################################
+################################################################################
 
 pacman -Scc --noconfirm
 
@@ -60,9 +60,9 @@ print_status
 
 
 # YELLOW MESSAGE
-#############################################################################
+################################################################################
 echo -e "\n\033[1;33mRemoving Rubbish Bin files...\033[0m"
-#############################################################################
+################################################################################
 
 rm -rfv .local/share/Trash/*
 rm -rfv /home/*/.local/share/Trash/*/**

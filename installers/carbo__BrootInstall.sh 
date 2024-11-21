@@ -1,14 +1,14 @@
 #!/bin/bash
-###################################################################################
-# Carbonara                                                                       #
-# Script: carbo__BrootInstall.sh                                                  #
-# Author: Apollo Alves                                                            #
-# Date: 16/12/2024                                                                #
-#                                                                                 #
-# Description:                                                                    #
-# This script installs and opens Broot file manager.                              #
-# It checks if the user has root privileges and then                              #
-###################################################################################
+################################################################################
+# Carbonara                                                                    #
+# Script: carbo__BrootInstall.sh                                               #
+# Author: Apollo Alves                                                         #
+# Date: 16/12/2024                                                             #
+#                                                                              #
+# Description:                                                                 #
+# This script installs and opens Broot file manager.                           #
+# It checks if the user has root privileges and then                           #
+################################################################################
 
 # Check if the user is root
 source 'carbo__verifyRoot.sh'

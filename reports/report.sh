@@ -1,24 +1,20 @@
 #!/bin/bash
+################################################################################
+# Carbonara                                                                    #
+# Script: carbo__BackupManager.sh		                               #
+# Invoke Nautilus by opening a specific directory.                             #
+# Author: Apollo Alves                                                         #
+# Date: 21/11/2024                                   			       #
+# 									       #
+# Description: System Report Script                                            #
+# This script generates a comprehensive machine report with various            #
+# system information. It includes details like machine name, OS name,          #
+# kernel version, hardware information, memory details, partition              #
+# information, last boot time, and more. Requires no user interaction.         #
+################################################################################
+
 # Check if the user is root
 source 'carbo__verifyRoot.sh'
-
-#####################################################################
-#                                                                   #
-# Script: report.sh                                                 #
-# Author: Apollo Alves                                              #
-# Date: 16/12/2023                                                  #
-#                                                                   #
-#####################################################################
-
-########################################################################
-#                                                                      #
-# System Report Script                                                 #
-# This script generates a comprehensive machine report with various    #
-# system information. It includes details like machine name, OS name,  #
-# kernel version, hardware information, memory details, partition      #
-# information, last boot time, and more. Requires no user interaction. #
-#                                                                      #
-########################################################################
 
 MENU='carbonara.sh'
 LINE_SCRIPT='line_script.sh'
