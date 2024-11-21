@@ -1,24 +1,18 @@
 #!/bin/bash
 # Check if the user is root
 source 'carbo__verifyRoot.sh'
-
-#####################################################################
-#                                                                   #
-# Script: rubbish__bin.sh                                           #
-# Author: Apollo Alves                                              #
-# Date: 16/12/2023                                                  #
-#                                                                   #
-#####################################################################
-
-#######################################################################
-#                                                                     #
-# Rubbish Bin Script                                                  #
-# This script is designed to be run with root privileges and removes  #
-# rubbish bin files and clears recently-used.xbel in the home         #
-# directory. It utilizes commands to remove specific files related to #
-# the rubbish bin and close any active Nautilus instances.            #
-#                                                                     #
-#######################################################################
+################################################################################
+# Carbonara                                                                    #
+# Script: carbo__RubbishBin.sh                                                 #
+# Author: Apollo Alves                                                         #
+# Date: 21/11/2024                                                             #
+#                                                                              #
+# Description: Rubbish Bin Script                                              #
+# This script is designed to be run with root privileges and removes           #
+# rubbish bin files and clears recently-used.xbel in the home                  #
+# directory. It utilizes commands to remove specific files related to          #
+# the rubbish bin and close any active Nautilus instances.                     #
+################################################################################
 
 MENU='/bin/carbo__Carbonara.sh'
 

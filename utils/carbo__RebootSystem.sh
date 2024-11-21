@@ -1,26 +1,18 @@
 #!/bin/bash
-# Check if the user is root
+################################################################################
+# Carbonara                                                                    #
+# Script: carbo__RebootSystem.sh                                               #
+# Author: Apollo Alves                                                         #
+# Date: 21/11/2024                                                             #
+#                                                                              #
+# Description: 	Reboot System Script                                           #
+# This script prompts the user if they want to restart the system  and         #
+# initiates the reboot if the user chooses 'y'. It also handles invalid input  #
+# and provides appropriate messages. Requires root  privileges to run.         #
+################################################################################
+
+Check if the user is root
 source 'carbo__verifyRoot.sh'
-
-#####################################################################
-#                                                                   #
-# Script: reboot__system.sh                                         #
-#                                                                   #
-# Author: Apollo Alves                                              #
-# Date: 16/12/2023                                                  #
-#                                                                   #
-#####################################################################
-
-#####################################################################
-#                                                                   #
-# Reboot System Script                                              #
-# This script prompts the user if they want to restart the system   #
-# and initiates the reboot if the user chooses 'y'. It also handles #
-# invalid input and provides appropriate messages. Requires root    #
-# privileges to run.                                                #
-#                                                                   #
-#                                                                   #
-#####################################################################
 
 MENU="carbonara.sh"
 YES="y"
@@ -30,11 +22,9 @@ echo
 echo -n 'Do you want to restart the system now? (y/n) ? '
 read -r rebootSystem
 
-
 if [ "$rebootSystem" = "$YES" ]; then
      
       reboot now
-
 fi
 
 if [ "$rebootSystem" = "$NO" ]; then
