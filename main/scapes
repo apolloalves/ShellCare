@@ -1,0 +1,23 @@
+HIGHLIGHTS COMMANDS
+PRINT GOOGLE
+echo -e '\033[01;34;47mg\033[01;31mo\033[01;33mo\033[01;34mg\033[01;32ml \033[01;31me\033[00;37;40m'
+
+PRINT FATAL ERROR "RED" - "BLINK"
+echo -e '\033[05;31merro fatal\033[00;37m'
+
+PRINT IN "WHITE BOLD UBUNTU" AND "GREEN UNDERSCORE" "Archlinux the best!!!"
+echo -e '\033[01;37mArchlinux \033[04;32mthe best\033[00;37m!!!'
+
+OK MESSAGE "WHITE BOLD UBUNTU" AND "GREEN UNDERSCORE" [ OK ]
+echo -e "\n\033[01;37m[\033[00;32m OK\033[00;37m ]\033m\n"
+
+DONE MESSAGE AND "GREEN UNDERSCORE" [ done ]
+echo -e "\n\033[01;37m[\033[00;32m done\033[00;37m ]\033m\n"
+
+BACKGROUND IN TEXT
+echo -e "\033[48;8;01;30;100mChoose an option from the menu\033[0m"
+
+YELLOW MESSAGE
+echo -e "\n\033[1;33mthere is nothing to do\033[0m"
+
+

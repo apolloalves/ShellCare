@@ -1,7 +1,9 @@
 #!/bin/bash
+
+
+
 # Check if the user is root
 source 'carbo__verifyRoot.sh'
-
 
 source ~/.bashrc
 . ~/.bashrc
@@ -9,88 +11,6 @@ clear
 
 
 
-########################################################################################################################
-#                                                                                                                      #
-# CARBONARA                                                                                                            #
-# THIS PROGRAM CONTAINS ROUTINE AUTOMATION SCRIPTS FOR:                                                                #
-#                                                                                                                      #
-# FULL KERNEL UPDATE;                                                                                                  #
-# COMPLETE UPDATE OF THE LIST OF REPOSITORIES;                                                                         #
-# APPLICATION UPDATE VIA FLATPAK UPDATE                                                                                #
-# COMPLETE DEVICE DRIVER UPDATE;                                                                                       #
-# GRUB UPDATE AFTER KERNEL UPDATE;                                                                                     #
-#                                                                                                                      #
-# AUTOMATIC REMOVAL AND CORRECTION OF APT/DPKG PACKAGES;                                                               #
-# REMOVAL AND CORRECTION OF TRACES OF UNUSED PACKAGES;                                                                 #
-# AUTOMATIC REMOVAL OF ORPHANED PACKAGES THAT ONLY OCCUPY SPACES;                                                      #
-#                                                                                                                      #
-# CLEANING EXCHANGE;                                                                                                   #
-# DISK USAGE SPACE SUMMARY;                                                                                            #
-#                                                                                                                      #
-# IN ADDITION, WE HAVE INCLUDED SCRIPTS TO REMOVE TRACES OF UNUSED DPKGS AND APTS PACKAGES THAT TAKE UP UNNECESSARY    #
-# SPACE AND                                                                                                         #
-# ALSO REMOVE THE ACCUMULATED KERNEL.                                                                                  #
-#                                                                                                                      #
-# AUTHOR : APOLLO ALVES                                                                                                                     #
-#                                                                                                                      #
-########################################################################################################################
-# FOR IT TO WORK EFFECTIVELY, WE RECOMMEND INSTALLING SOME DEPENDENCIES:                                               #
-########################################################################################################################
-# TRASH-CLI - REMOVAL RUBBISH BIN FILES      #
-# HTTPS://GITHUB.COM/ANDREAFRANCIA/TRASH-CLI #
-#                                            #
-# ORPHANER - REMOVAL OF ORPHAN PACKAGES      #
-# SUDO APT INSTALL DEBORPHAN                 #
-#                                            #
-##############################################
-
-# Instructions:
-
-# 1 - Download the file;
-# 2 - Give him execution privileges (X) as root;
-# 3 - Move the file to the /bin directory
-# 4 - Run the command in the terminal with sudo
-
-##################################################################################################################
-#                                                                                                                #
-# ATTENTION!                                                                                                     #
-#                                                                                                                #
-# AT YOUR OWN RISK, WE ARE NOT RESPONSIBLE FOR ANY SYSTEM FAILURES OR DAMAGES THAT MAY OCCUR WITH YOUR GNU/LINUX #
-# DISTRIBUTION.                                                                                                  #
-#                                                                                                                #
-# THE RESOURCE DEVELOPED IN THIS PROJECT IS COMPLETELY OPEN SOURCE, WE DO NOT TOLERATE IMPROPER DISTRIBUTION OR  #
-# FOR PROFIT. MODIFY IT AND DISTRIBUTE IT FOR FREE TO EVERYONE!                                                  #
-#                                                                                                                #
-# WE ENCOURAGE YOU TO FEEL FREE TO FURTHER IMPROVE OUR CODE. AFTER ALL, THAT'S WHAT THE GNU/LINUX UNIVERSE WAS   #
-# BORN FOR!                                                                                                      #
-#                                                                                                                #
-# # GOOD LUCK! GREETINGS!                                                                                        #
-##################################################################################################################
-# HIGHLIGHTS COMMANDS                                                                                            #
-##################################################################################################################
-#                                                                                                                #
-# PRINT GOOGLE                                                                                                   #
-# echo -e '\033[01;34;47mg\033[01;31mo\033[01;33mo\033[01;34mg\033[01;32ml \033[01;31me\033[00;37;40m'           #
-#                                                                                                                #
-# PRINT FATAL ERROR "RED" - "BLINK"                                                                              #
-# echo -e '\033[05;31merro fatal\033[00;37m'                                                                     #
-#                                                                                                                #
-# PRINT IN "WHITE BOLD UBUNTU" AND "GREEN UNDERSCORE" "FOCAL FOSSA"                                              #
-# echo -e '\033[01;37mubuntu \033[04;32mfocal fossa\033[00;37m!!!'                                               #
-#
-# OK MESSAGE "WHITE BOLD UBUNTU" AND "GREEN UNDERSCORE" "FOCAL FOSSA"                                              #
-# echo -e "\n\033[01;37m[\033[00;32m OK\033[00;37m ]\033m\n"
-#
-# DONE MESSAGE AND "GREEN UNDERSCORE" "FOCAL FOSSA"                                              #
-# echo -e "\n\033[01;37m[\033[00;32m done\033[00;37m ]\033m\n"
-#
-# BACKGROUND IN TEXT
-# echo -e "\033[48;8;01;30;100mChoose an option from the menu\033[0m"
-#
-# YELLOW MESSAGE
-# echo -e "\n\033[1;33mthere is nothing to do!\033[0m"
-
-######################################################################################################################################################################################
 
 MENU='/bin/carbonara.sh'
 source '/bin/carbo__MenuItem.sh'
