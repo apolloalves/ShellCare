@@ -1,21 +1,20 @@
 #!/bin/bash
-####################################################################################
-#                                                                                  #
-# Script: install.sh - LinuxBashCare Setup Script                                  #
-#                                                                                  #
-# Author: Apollo Alves                                                             #
-# Date: 16/12/2023                                                                 #
-#                                                                                  #
-# Description:                                                                     #
-# This script automates the setup process for LinuxBashCare. It performs           #
-# various tasks, including locating the LinuxBashCare folder, setting              #
-# execute permissions, copying executables to /bin, updating the system,           #
-# installing dependencies, and configuring system utilities.                       #
-#                                                                                  #
-# Note: This script assumes a Debian-based system and requires superuser           #
-# (sudo) privileges for certain operations.                                        #
-#                                                                                  #
-####################################################################################
+################################################################################
+# Carbonara                                                                    #
+# Script: carbo__InstallCarbonara.sh 					       #
+# Author: Apollo Alves                                                         #
+# Date: 21/11/2023                                                             #
+#                                                                              #
+# Description:                                                                 #
+# This script automates the setup process for carbonara. It performs           #
+# various tasks, including locating the carbonara folder, setting              #
+# execute permissions, copying executables to /bin, updating the system,       #
+# installing dependencies, and configuring system utilities.                   #
+#                                                                              #
+# Note: This script assumes a Debian-based system and requires superuser       #
+# privileges for certain operations.                                           #
+#                                                                              #
+################################################################################
 
 # Check if the user is root
 source 'carbo__verifyRoot.sh'
