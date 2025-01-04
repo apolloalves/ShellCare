@@ -11,7 +11,7 @@
 # and provides appropriate messages. Requires root  privileges to run.         #
 ################################################################################
 
-Check if the user is root
+#Check if the user is root
 source 'carbo__verifyRoot.sh'
 
 MENU="carbonara.sh"
@@ -24,7 +24,10 @@ read -r rebootSystem
 
 if [ "$rebootSystem" = "$YES" ]; then
      
-      reboot now
+      #reboot now
+      systemctl soft-reboot
+
+
 fi
 
 if [ "$rebootSystem" = "$NO" ]; then

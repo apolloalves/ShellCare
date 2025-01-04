@@ -7,11 +7,11 @@
 ################################################################################
 
 # Check if the user is root
-source 'carbo__verifyRoot.sh'
+#source 'carbo__verifyRoot.sh'
 clear
 
 MENU='/bin/carbonara.sh'
-PERFORMANCE='/bin/carbo__PerformanceWizard.sh'
+SERVICEWIZARD='/bin/carbo__ServicesWizard.sh'
 
 echo
 LINE_SCRIPT='/bin/carbo__LineScript.sh'
@@ -73,7 +73,7 @@ if [ "$option_choice" != "e" ] && [ "$option_choice" != "E" ]; then
             ;;
         esac
         read -rsn1 -p "Press any key to continue..."
-	$PERFORMANCE
+	$SERVICEWIZARD
     fi
 else
 

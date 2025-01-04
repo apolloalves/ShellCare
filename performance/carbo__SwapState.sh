@@ -26,7 +26,6 @@
 
 # Check if the user is root
 source 'carbo__verifyRoot.sh'
-source carbo__PerformanceWizard.sh
 echo -e "\nSwap Sate\n"
 free -h
 carbo__LineScript.sh

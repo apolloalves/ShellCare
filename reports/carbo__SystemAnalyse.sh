@@ -18,7 +18,7 @@ source 'carbo__verifyRoot.sh'
 
 YES="y"
 NO="n"
-LINE_SCRIPT='/bin/line_script.sh'
+LINE_SCRIPT='/bin/carbo__LineScript.sh'
 MENU='/bin/carbonara.sh'
 PLOTDIR="$HOME/plot"
 PLOT="$PLOTDIR/plot.png"
